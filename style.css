@@ -195,7 +195,7 @@
 /*mobile screen*/
 @media only screen and (max-width: 767px) {
     .password-container {
-        padding: 4em 0 0 1em;
+        padding: 4em 0 2em 1em;
     }
 
     .password-container h1 {
@@ -277,7 +277,7 @@
 /*mobile screen*/
 @media only screen and (max-width: 697px) {
     .palidrome-container {
-        padding: 8em 0 1em 1em;
+        padding: 8em 0 2em 1em;
     }
 
     .palidrome-container h1 {
