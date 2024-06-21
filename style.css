@@ -6,6 +6,18 @@
     font-family: 'EB Garamond', sans-serif;
 }
 
+.back {
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin-bottom: .5em;
+    cursor: pointer;
+}
+
+.back:hover {
+    transform: scale(1.2);
+}
+
 .home-container {
     text-align: center;
     background: linear-gradient(to bottom right, #E3867D, #CEE6F2);
