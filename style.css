@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    font-family: 'EB Garamond', sans-serif;
+}
+
+.home-container {
+    text-align: center;
+    background: linear-gradient(to bottom right, #E3867D, #CEE6F2);
+    min-height: 100vh;
+    padding-top: .3em;
+    color: #962E2A;
+}
+
+.home-container h1 {
+    font-size: 3rem;
+}
+
+.home-container h4 {
+    margin: .4em 0 1em 0;
+    font-size: 3rem;
+}
+
+.card-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool-card {
+    display: inline-block;;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    color: #962E2A;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 3em;
+    z-index: 2;
+    transition: transform ease-in-out 0.5s;
+}
+
+.tool-card::before {
+    position: absolute;
+    left:48%;
+    top: 56%;
+    transform: translate(48%, -56%);
+    content: "";
+    width: 250px;
+    height: 250px;
+    z-index: -1;
+    background-color: transparent;
+    border-color: #962E2A;
+    border-width: 4px;
+    border-style: dashed;
+    border-radius: 50%;
+    animation: rotate 60s linear infinite;
+}
+
+.tool-card:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+@media only screen and (max-width: 697px) {
+    .card-section {
+        flex-direction: column;
+    }
+    .tool-card {
+        margin: 2em;
+    }
+
+    .home-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-container h4 {
+        margin: .7em 0;
+    }
+}
+
+
+/* password generator styling */
+.password-container {
+    background: linear-gradient(to right, #962E2A,  #E3867D);
+    min-height: 100vh;
+    padding: 6em 4em;
+    color: white;
+}
+
+.password-container h1 {
+    font-size: 4rem;
+    margin-bottom: .3em;
+    line-height: 1em;
+}
+
+.password-container p {
+    color: #cee6f2; 
+    visibility: hidden;
+    margin-bottom: .1em;
+}
+
+.password-container span {
+    font-size: inherit;
+    color: #CEE6F2;
+}
+
+.input-password {
+    background-color: white;
+    padding: 1em .5em;
+    height: 50px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-password:hover {
+    box-shadow: 0px 0px 8px #962E2A;
+}
+
+.input-password input {
+    outline: none;
+    border: 0;
+    width: 70%;
+    color: #962E2A;
+    font-weight: 600;
+    padding-left: .2em;
+}
+
+.input-password img {
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.input-password img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.password-container button {
+    background-color: #CEE6F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: .7em 1em;
+    width: 21%;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 1.5em;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.password-container button:hover {
+    background-color: #668fa3;
+    box-shadow: 0px 0px 10px 2px rgb(38, 207, 137), 0px 0px 1px 2px rgb(26, 201, 26);
+    transition: 0.5s;
+}
+
+.password-container button span {
+    color: #962E2A;
+    font-weight: 600;
+}
+
+/*mobile screen*/
+@media only screen and (max-width: 767px) {
+    .password-container {
+        padding: 8em 0 0 1em;
+    }
+
+    .password-container h1 {
+        font-size: 1.7em;
+    }
+
+    .input-password {
+        width: 80%;
+    }
+
+    .password-container button {
+        margin-top: 1em;
+        width: 50%;
+    }
+}
+
+
+/* palidrome checker styling */
+.palidrome-container {
+    background: linear-gradient(to right, #962E2A,  #E3867D);
+    min-height: 100vh;
+    padding: 6em 4em;
+    color: white;
+}
+
+.palidrome-container h1 {
+    font-size: 4rem;
+    margin-bottom: .5em;
+    line-height: 1em;
+    padding-bottom: .2em;
+    border-bottom: 5px solid #CEE6F2;
+    width: fit-content;
+}
+
+.input-palidrome {
+    background-color: white;
+    padding: 1em 0 1em .5em;
+    height: 50px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-palidrome:hover {
+    box-shadow: 0px 0px 8px #962E2A;
+}
+
+.input-palidrome input {
+    outline: none;
+    border: 0;
+    width: 70%;
+    font-size: 1rem;
+    padding-left: .1em;
+    font-weight: 600;
+    color: #962E2A;
+}
+
+.input-palidrome button {
+    background-color: #CEE6F2;
+    padding: .7em 1em;
+    width: 25%;
+    border: 0;
+    cursor: pointer;
+    color: #962E2A;
+    font-weight: 600;
+    transition: ease-in-out 0.5s;
+}
+
+.input-palidrome button:hover {
+    background-color: #668fa3;
+    transition: 0.5s;
+}
+
+
+/*mobile screen*/
+@media only screen and (max-width: 697px) {
+    .palidrome-container {
+        padding: 8em 0 0 1em;
+    }
+
+    .palidrome-container h1 {
+        font-size: 1.7em;
+    }
+
+    .input-palidrome {
+        width: 80%;
+    }
+
+    .input-palidrome button {
+        width: 40%;
+    }
+}
+@media (min-width: 697px) and (max-width: 991px) {
+    .palidrome-container {
+        padding: 8em 0 0 1em;
+    }
+
+    .palidrome-container h1 {
+        font-size: 3em;
+    }
+
+    .input-palidrome {
+        width: 60%;
+    }
+
+    .input-palidrome button {
+        width: 40%;
+    }
+}

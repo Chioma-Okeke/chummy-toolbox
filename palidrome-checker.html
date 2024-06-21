@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/palidromelogo.png" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Palidrome Checker</title>
+    </head>
+    <body style="background: linear-gradient(to right, #962e2a, #e3867d)">
+        <div
+            class="palidrome-container"
+            style="
+                opacity: 0;
+                transform: translateY(-50px);
+                transition: transform ease-in-out 1s opacity ease-in-out 1s;
+            "
+            id="body"
+        >
+            <h1>Palidrome Checker</h1>
+            <div class="input-palidrome">
+                <input class="input-box" type="text" placeholder="Enter word" />
+                <button class="checkButton">Check</button>
+            </div>
+            <p class="result" style="margin-top: 0.3em"></p>
+        </div>
+        <script src="/palidrome-checker.js"></script>
+    </body>
+</html>
