@@ -10,7 +10,7 @@
     color: white;
     width: 30px;
     height: 30px;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     cursor: pointer;
 }
 
@@ -22,7 +22,7 @@
     text-align: center;
     background: linear-gradient(to bottom right, #E3867D, #CEE6F2);
     min-height: 100vh;
-    padding-top: .3em;
+    padding: .3em;
     color: #962E2A;
 }
 
@@ -136,7 +136,8 @@
     background-color: white;
     padding: 1em .5em;
     height: 50px;
-    width: 40%;
+    width: 50%;
+    max-width: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -194,15 +195,18 @@
 /*mobile screen*/
 @media only screen and (max-width: 767px) {
     .password-container {
-        padding: 8em 0 0 1em;
+        padding: 4em 0 0 1em;
     }
 
     .password-container h1 {
-        font-size: 1.7em;
+        font-size: 1.9em;
+        margin-bottom: 1em;
+        line-height: 1.2em;
     }
 
     .input-password {
         width: 80%;
+        margin-bottom: 1.5em;
     }
 
     .password-container button {
@@ -277,11 +281,12 @@
     }
 
     .palidrome-container h1 {
-        font-size: 1.7em;
+        font-size: 2em;
+        margin-bottom: 1.5em;
     }
 
     .input-palidrome {
-        width: 80%;
+        width: 90%;
     }
 
     .input-palidrome button {
